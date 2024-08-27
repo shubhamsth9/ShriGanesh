@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Shri Ganesh",
+    "description": "Virtual Shri Ganesh for Digital Shubhaarambh!",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "shriganesh.png"
+    }
+  }
