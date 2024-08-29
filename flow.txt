@@ -1,0 +1,22 @@
+sequence:
+
+-> user clicks on extension -> button Let's Shri Ganesh > confetti blasts
+-> flowers start falling from the top of screen, image of Lord Ganesha slowly pops up, moving flowers codepen below the picture
+-> at his feet comes a mouse,
+-> Top text "Shri Ganeshaya Namah [श्री गणेशाय नम:]"
+-> bottom text "Lord Ganesha has blessed your new project! 
+The obstacles have been removed successfully! You must achieve great things!"
+
+
+later updates // 
+-> Offer a laddu! button
+-> User can place flowers using mouse clicks
+
+
+insp: 
+
+https://codepen.io/marius4568/details/bGPYoQJ
+
+https://codepen.io/ksenia-k/pen/poOMpzx
+
+https://codepen.io/ksenia-k/pen/ExGEqVo
