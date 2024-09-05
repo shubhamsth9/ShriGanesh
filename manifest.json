@@ -2,10 +2,16 @@
     "manifest_version": 3,
     "name": "Shri Ganesh",
     "description": "Virtual Shri Ganesh for Digital Shubhaarambh!",
+    "icons": {
+      "16": "shree16.png",
+      "32": "shree32.png",
+      "48": "shree48.png",
+      "128": "shree128.png"
+    },
     "version": "1.0",
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "shriganesh.png"
+      "default_icon": "shree16.png"
     },
     "permissions": [],
     "web_accessible_resources": [{

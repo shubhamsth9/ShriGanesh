@@ -9,3 +9,5 @@
 Read more: https://www.siddhayoga.org/shri-ganesh/the-lord-of-new-beginnings,
 https://apkamart.com/blogs/apkamart-potpourri/lord-ganesha?srsltid=AfmBOoraR_Acvg9T8SF42Y1pbd2mJf0VIIYO_WzgH8nPfrrJxrxGmPuq, 
 https://timesofindia.indiatimes.com/religion/hindu-mythology/heres-why-every-puja-starts-with-worshiping-lord-ganesha/articleshow/70565026.cms
+
+Shree Icon by IconScout Store "https://iconscout.com/contributors/iconscout"
