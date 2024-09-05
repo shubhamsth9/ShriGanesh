@@ -1,12 +1,13 @@
 const celebrateBtn = document.getElementById('celebrateBtn');
 const mainImg = document.getElementById("mainImg");
 const text = document.querySelector('.typing-text');
-let animation;
-
+const buttonAndText = document.getElementById("buttonAndText");
+const lastMsg = document.getElementById('lastMsg');
 
 celebrateBtn.addEventListener('click', () => {
     //disable button
     celebrateBtn.disabled = true;
+    buttonAndText.style.display = 'none';
 
     // trigger confetti
     confetti({
@@ -23,22 +24,16 @@ celebrateBtn.addEventListener('click', () => {
 
     zoomInOut();
 
-    setTimeout(() => {
-        if(animation) {
-            animation.goToAndPlay(0);
-        }
-    }, 500);
-
-    setTimeout(() => {
-        if(animation) {
-            setTyper(text, words);
-        }
-    }, 1000);
+    setTimeout(async () => {
+        text.style.display = 'block';
+        setTyper(text, words);
+    }, 2000);
+    // text.style.display = 'none';
 
 });
 
 function zoomInOut() {
-    mainImg.style.display = 'block';
+    mainImg.style.display = 'inline';
     mainImg.classList.add('zoomIn');
     setTimeout(() => {
         mainImg.classList.add('zoomOut');
@@ -47,18 +42,18 @@ function zoomInOut() {
             mainImg.style.display = 'none';
             mainImg.classList.remove('zoomIn');
             mainImg.classList.remove('zoomOut');
+            text.style.display = 'none';
+            lastMsg.style.display = 'block';
         }, 1800);
         
-    }, 3000);
+    }, 23000);
 }
 
 // typing effect
 const words = [
   "Shri Ganeshaya Namah 🙏",
   "Lord Ganesha has blessed your new project! ✨",
-  "All the obstacles have been removed successfully ✅",
-  "You must achieve great things! 💪",
-  "now back to work 👨‍💻"
+  "You must achieve great things! 💪"
 ];
 
 function setTyper(element, words) {
@@ -82,24 +77,27 @@ function setTyper(element, words) {
   }
 
   function typeLetter() {
-    const word = words[wordIndex];
+        if (wordIndex == words.length) {
+            return;
+            }
+        const word = words[wordIndex];
 
-    if (direction == DIRECTION_FORWARDS) {
-      letterIndex++;
+        if (direction == DIRECTION_FORWARDS) {
+            letterIndex++;
 
-      if (letterIndex == word.length) {
-        direction = DIRECTION_BACKWARDS;
-        clearInterval(wordTypeInterval);
-        setTimeout(startTyping, WORD_STAY_DELAY);
-      }
+            if (letterIndex == word.length) {
+                direction = DIRECTION_BACKWARDS;
+                clearInterval(wordTypeInterval);
+                setTimeout(startTyping, WORD_STAY_DELAY);
+            }
 
-    } else if (direction == DIRECTION_BACKWARDS) {
-      letterIndex--;
+            } else if (direction == DIRECTION_BACKWARDS) {
+            letterIndex--;
 
-      if (letterIndex == 0) {
-        nextWord();
-      }
-    }
+            if (letterIndex == 0) {
+                nextWord();
+            }
+        }
 
     const textToType = word.substring(0, letterIndex);
 
@@ -115,6 +113,10 @@ function setTyper(element, words) {
     if (wordIndex == words.length) {
       return;
     }
-
   }
 }
+
+lastMsg.addEventListener('click', () => {
+    lastMsg.style.display = 'none';
+    buttonAndText.style.display = 'block';
+})

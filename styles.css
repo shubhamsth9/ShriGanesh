@@ -41,14 +41,25 @@ body {
     transform: scale(0.98);
 }
 
-/* .lottie-container {
-    width: 10px;
-    height: 10px;
+#lastMsg {
+    display: none;
+    cursor: pointer;
+}
+.lastMsgHeading {
+    color: rgb(219, 70, 37);
+}
+.lastMsgText {
+    color: rgb(0, 71, 224);
+}
 
-} */
+.displayOn {
+    display: block;
+}
 
 .typing-text{
+    display: none;
     font-size: larger;
+    margin: 20px 5px 5px;
 }
 
 .typing-text::after {
