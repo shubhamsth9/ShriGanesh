@@ -40,3 +40,57 @@ body {
 .celebrate-btn:active {
     transform: scale(0.98);
 }
+
+/* .lottie-container {
+    width: 10px;
+    height: 10px;
+
+} */
+
+.typing-text{
+    font-size: larger;
+}
+
+.typing-text::after {
+    content: "|";
+    animation: blink ease 1s infinite;
+  }
+  
+@keyframes blink {
+0%, 100% {
+    opacity: 0;
+} 50% {
+    opacity: 1;
+}
+}
+
+#mainImg {
+    display: none;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.zoomIn {
+    animation: zoom-in 1.5s ease-out;
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+.zoomOut {
+    animation: zoom-out 2s ease-out;
+}
+@keyframes zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+    transform: scale(0, 0);
+    }
+}
