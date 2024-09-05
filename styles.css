@@ -17,6 +17,10 @@ body {
     padding: 0;
 }
 
+p {
+    font-size: medium;
+}
+
 .cont {
     text-align: center;
 }
@@ -46,6 +50,7 @@ body {
     cursor: pointer;
 }
 .lastMsgHeading {
+    font-size: medium;
     color: rgb(219, 70, 37);
 }
 .lastMsgText {
