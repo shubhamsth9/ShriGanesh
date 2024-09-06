@@ -8,13 +8,10 @@
       "48": "shree48.png",
       "128": "shree128.png"
     },
-    "version": "1.0",
+    "version": "0.1",
     "action": {
       "default_popup": "popup.html",
       "default_icon": "shree16.png"
     },
-    "permissions": [],
-    "web_accessible_resources": [{
-      "resources": ["mainImg.png"]
-    }]
+    "permissions": []
   }
